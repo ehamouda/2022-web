@@ -262,11 +262,11 @@ Edit the text to match who can attend the workshop. For instance:
 <p id="fees">
     <strong>Event Fees:</strong>
     To limit the likelihood of no-shows and to raise funds for causes near to the instructors hearts, this workshop has a nominal fee of $20. All event proceeds (after Eventbrite takes their cut) will be split among the instructors and sent to the following charities. 
-  <li>
-    <ul> Robin: <a href="https://d4bl.org/">Data for Black Lives</a>
-    <ul> Allison: <a href="https://www.blackgirlscode.com/">Black Girls Code</a>, and <a href="https://www.thetrevorproject.org/">The Trevor project</a>
-    <ul> Clark: <a href="https://vetswhocode.io/">#VetsWhoCode</a>
-  </li>
+  <ul>
+    <li> Robin: <a href="https://d4bl.org/">Data for Black Lives</a> </li>
+    <li> Allison: <a href="https://www.blackgirlscode.com/">Black Girls Code</a>, and <a href="https://www.thetrevorproject.org/">The Trevor project</a> </li>
+    <li> Clark: <a href="https://vetswhocode.io/">#VetsWhoCode</a> </li>
+  </ul>
   
 </p>
 <hr/>
