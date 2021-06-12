@@ -1,12 +1,13 @@
 ---
 title: "Day 4: Building Websites"
 output:
-  
   html_document: 
     toc: yes
     toc_float: yes
     theme: flatly
 ---
+
+# `r emo::ji("warning")` Site currently under development
 
 > ## Learning Objectives
 > 
