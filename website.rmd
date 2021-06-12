@@ -1,32 +1,61 @@
 ---
-title: "Website building"
+title: "Day 4: Building Websites"
 output:
-  html_document:
+  
+  html_document: 
     toc: yes
     toc_float: yes
-    toc_depth: 2
-  pdf_document:
-    toc: yes
-
+    theme: flatly
 ---
 
-_This page was last updated `r format(Sys.time(), "%a %b %d")`._  
-[[Download this page as a PDF]](website.pdf)
-<br>
+> ## Learning Objectives
+> 
+> * Recognize the minimal requirements to build a website using R and Markdown. 
+> * Build three types of websites using R and Markdown
+> * Publish these website to GitHub and/or Netlify
 
-# Learning Objectives
 
-* Recognize the minimal requirements to build a website using R and Markdown. 
-* Build a basic level website using R and Markdown
-* Publish this website to GitHub
-* Become aware of how the `blogdown` R package can be used to create responsive websites
-* Download and compile a starter website based on blogdown. 
-
-**Collaborative notes**: https://hackmd.io/@norcalbiostat/ichps2020_website_notes
+**Collaborative notes**: https://codimd.carpentries.org/9Xdg8n4pQv6zMMHHLU9BZQ  
+**Workshop Website**: https://csucdsi.github.io/2021-06-14-csumath/
 
 ----
 
-# Getting started: Basic Site
+# Introduction 
+
+### Motivating Examples
+
+* Static Rmarkdown
+    - Course webpage for an Applied Statistics class at CSU, Chico https://norcalbiostat.github.io/MATH315/index.html
+    - Project webpage https://norcalbiostat.github.io/chem_ss/
+    - Personal website: http://www.emilyzabor.com/
+    - psyTeachR workshop: https://psyteachr.github.io/hack-your-data/index.html 
+* Distill blog
+    - Course website for Data Analytics for Social Good https://norcalbiostat.github.io/DATA185/ 
+    - Piping hot data https://www.pipinghotdata.com/ 
+    - Teaching in Production https://rstudio-education.github.io/teaching-in-production/ 
+* Blogdown / Hugo
+    - https://alison.rbind.io/
+    - http://www.citizen-statistician.org/
+    - https://beyondrawdata.rbind.io/
+    - https://chicodatafest.netlify.com/
+    - http://datascience.csuchico.edu/
+    - https://yihui.org/
+    - https://robjhyndman.com/ 
+    - https://www.norcalbiostat.com/ 
+    
+
+
+# Prerequisites
+To full participate in today's activites, you must have the following: 
+
+* **Version Control:** A github account, git installed on your computer, the ability to push and pull from a local repository to a remote one, and the ability to connect git repositories to R through projects. 
+* **R & R Studio:** with the following packages: `knitr`, `blogdown` v1.3, `distill` v1.2.4, `devtools`
+* **A [Netlify](https://www.netlify.com/) account.** I recommend that you sign up with your github account.  
+* **Set Intentions** It's easy to get lost in all the settings, tweaks, themes, customizations and so forth. Decide on some clear objectives to help keep you on track.  
+
+----
+
+# Getting started: RMarkdown
 
 R Markdown websites like this one can be built with a minimum of two files: a `_site.yml` and an `index.Rmd`. 
 
@@ -213,22 +242,19 @@ git push
 * Refresh your live webpage on GitHub to see the results! 
 
 
-### Examples
 
-* Course webpage for an Applied Statistics class at CSU, Chico https://norcalbiostat.github.io/MATH315/index.html
-* Project webpage https://norcalbiostat.github.io/chem_ss/
-* Personal website: http://www.emilyzabor.com/index.html
+----
+
+# Level up: Blog Aware with Distill
 
 
 ----
 
-# Next phase: Blog Aware
+# Full Fancieness: Hugo
 
 The "simple" website that was built above can be extended and enhanced well enough with some CSS and Rmarkdown wizardry. However, sometimes you may want a little more of a 'modern', 'dynamic' or 'responsive' feel, or to include a blog in your website. Here are some examples:  
 
 * https://georgecushen.com/
-* https://chicodatafest.netlify.com/
-* http://datascience.csuchico.edu/
 
 
 This is when we enter the realm of [[Hugo]](https://gohugo.io/), - the self proclaimed "most popular open-source static site generator". 
@@ -372,20 +398,23 @@ You *could* use GitHub Pages as we did previously to host a Hugo based website, 
 
 ----
 
-# Read the Docs (References)
+# Additional References
 
-* Github
-    * https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
-    * https://swcarpentry.github.io/git-novice/
-    * https://happygitwithr.com/
+### Github
+* https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
+* https://swcarpentry.github.io/git-novice/
+* https://happygitwithr.com/
 
-* Static Sites
-    * R Markdown sites from R Studio https://rmarkdown.rstudio.com/lesson-13.html
-    * Chapter 10.5 in the Blogdown book https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html 
+### Static Sites
+* R Markdown sites from R Studio https://rmarkdown.rstudio.com/lesson-13.html
+* Chapter 10.5 in the Blogdown book https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html 
+* Distill website https://rstudio.github.io/distill/website.html
 
-* Blog aware sites 
-    * `blogdown`: Creating Websites with R Markdown https://bookdown.org/yihui/blogdown/ , https://github.com/rstudio/blogdown 
+
+### Blog based websites 
+* `distill` for Rmarkdown https://rstudio.github.io/distill/blog.html 
+* `blogdown`: Creating Websites with R Markdown https://bookdown.org/yihui/blogdown/ , https://github.com/rstudio/blogdown 
     * Getting started with the Academic theme: https://sourcethemes.com/academic/docs/get-started/
-    
+    * Up and running with blogdown in 2021 https://alison.rbind.io/blog/2020-12-new-year-new-blogdown/ 
 
     
