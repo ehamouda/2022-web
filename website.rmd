@@ -24,16 +24,18 @@ output:
 
 ## Motivating Examples
 
-* Static Rmarkdown
-    - Course webpage for an Applied Statistics class at CSU, Chico https://norcalbiostat.github.io/MATH315/index.html
-    - Project webpage https://norcalbiostat.github.io/chem_ss/
+* Static pages
     - Personal website: http://www.emilyzabor.com/
-    - psyTeachR workshop: https://psyteachr.github.io/hack-your-data/index.html 
-* Distill blog
+    - Academic website: http://webpages.csus.edu/wiscons/ 
+    - Academic website: http://webpages.csus.edu/fitzgerald/about/
+    - Workshop: https://psyteachr.github.io/hack-your-data/index.html 
+    - Course materials https://norcalbiostat.github.io/MATH315/index.html
+    - Project report https://norcalbiostat.github.io/chem_ss/
+* Static pages + blog
     - Course website for Data Analytics for Social Good https://norcalbiostat.github.io/DATA185/ 
     - Piping hot data https://www.pipinghotdata.com/ 
     - Teaching in Production https://rstudio-education.github.io/teaching-in-production/ 
-* Blogdown / Hugo
+* Blog centric
     - https://alison.rbind.io/
     - http://www.citizen-statistician.org/
     - https://beyondrawdata.rbind.io/
