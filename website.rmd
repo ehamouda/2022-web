@@ -49,6 +49,7 @@ To full participate in today's activites, you must have the following:
 
 * **Version Control:** A github account, git installed on your computer, the ability to push and pull from a local repository to a remote one, and the ability to connect git repositories to R through projects. 
 * **R & R Studio:** with the following packages: `knitr`, `blogdown v1.3`, `distill v1.2.4`, `devtools`
+    - use blogdown to install Hugo by typing `blogdown::install_hugo()`
 * **A [Netlify](https://www.netlify.com/) account.** I recommend that you sign up with your github account.  
 * **Set Intentions** It's easy to get lost in all the settings, tweaks, themes, customizations and so forth. Decide on some clear objectives to help keep you on track.  
 
@@ -265,7 +266,7 @@ If you did not do so beforehand, install the `blogdown` package, and use it to i
 
 ### 1. Create a new Github Repo and connect it to an R Project. 
 
-This is step 1 and 2 from the first part of this workshop. 
+You got this.  
 
 ### 2. Create a new site with a specified theme
 
