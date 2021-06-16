@@ -60,7 +60,7 @@ if (window.hljs) {
 
 
 
-<link rel="stylesheet" href="data:text/css,%2Eblackbox%20%7Bpadding%3A%201em%3Bbackground%3A%20black%3Bcolor%3A%20white%3Bborder%3A%202px%20solid%20orange%3Bborder%2Dradius%3A%2010px%3B%7D%2Egreen%20%7Bpadding%3A%201em%3Bbackground%3A%20%23b3e6cc%3B%7D%2Eblue%20%7Bpadding%3A%201em%3Bbackground%3A%20%23cce6ff%3B%7D%2Eblue%2Dnos%20%7Btext%2Dalign%3A%20center%3Bbackground%3A%20%23cce6ff%3B%7D%2Ered%20%7Bbackground%3A%20%23ff9999%3B%7Dhr%20%7Bborder%2Dtop%3A%202px%20solid%20navy%3B%7D" type="text/css" />
+<link rel="stylesheet" href="data:text/css,%2Eblackbox%20%7Bpadding%3A%201em%3Bbackground%3A%20black%3Bcolor%3A%20white%3Bborder%3A%202px%20solid%20orange%3Bborder%2Dradius%3A%2010px%3B%7D%2Eblue%20%7Bborder%2Dradius%3A%2010px%3Bpadding%3A%201em%3Bbackground%3A%20%23cce6ff%3B%7D%2Eblue%2Dnos%20%7Btext%2Dalign%3A%20center%3Bbackground%3A%20%23cce6ff%3B%7D%2Egreen%20%7Bpadding%3A%20%2E7em%3Bborder%2Dradius%3A%2010px%3Bbackground%3A%20%23b3e6cc%3B%7D%2Ered%20%7Bpadding%3A%20%2E7em%3Bborder%2Dradius%3A%2010px%3Bbackground%3A%20%23ff9999%3B%7Dhr%20%7Bborder%2Dtop%3A%203px%20solid%20navy%3B%7D" type="text/css" />
 
 
 
@@ -245,8 +245,6 @@ div.tocify {
 </div>
 
 
-<div id="site-currently-under-development" class="section level1">
-<h1>⚠️ Site currently under development</h1>
 <div class="blue">
 <p><strong>Learning Objectives</strong></p>
 <ul>
@@ -256,26 +254,27 @@ div.tocify {
 </ul>
 </div>
 <hr />
-</div>
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
 <div id="motivating-examples" class="section level2">
 <h2>Motivating Examples</h2>
 <ul>
-<li>Static Rmarkdown
+<li>Static pages
 <ul>
-<li>Course webpage for an Applied Statistics class at CSU, Chico <a href="https://norcalbiostat.github.io/MATH315/index.html" class="uri">https://norcalbiostat.github.io/MATH315/index.html</a></li>
-<li>Project webpage <a href="https://norcalbiostat.github.io/chem_ss/" class="uri">https://norcalbiostat.github.io/chem_ss/</a></li>
 <li>Personal website: <a href="http://www.emilyzabor.com/" class="uri">http://www.emilyzabor.com/</a></li>
-<li>psyTeachR workshop: <a href="https://psyteachr.github.io/hack-your-data/index.html" class="uri">https://psyteachr.github.io/hack-your-data/index.html</a></li>
+<li>Academic website: <a href="http://webpages.csus.edu/wiscons/" class="uri">http://webpages.csus.edu/wiscons/</a></li>
+<li>Academic website: <a href="http://webpages.csus.edu/fitzgerald/about/" class="uri">http://webpages.csus.edu/fitzgerald/about/</a></li>
+<li>Workshop: <a href="https://psyteachr.github.io/hack-your-data/index.html" class="uri">https://psyteachr.github.io/hack-your-data/index.html</a></li>
+<li>Course materials <a href="https://norcalbiostat.github.io/MATH315/index.html" class="uri">https://norcalbiostat.github.io/MATH315/index.html</a></li>
+<li>Project report <a href="https://norcalbiostat.github.io/chem_ss/" class="uri">https://norcalbiostat.github.io/chem_ss/</a></li>
 </ul></li>
-<li>Distill blog
+<li>Static pages + blog
 <ul>
 <li>Course website for Data Analytics for Social Good <a href="https://norcalbiostat.github.io/DATA185/" class="uri">https://norcalbiostat.github.io/DATA185/</a></li>
 <li>Piping hot data <a href="https://www.pipinghotdata.com/" class="uri">https://www.pipinghotdata.com/</a></li>
 <li>Teaching in Production <a href="https://rstudio-education.github.io/teaching-in-production/" class="uri">https://rstudio-education.github.io/teaching-in-production/</a></li>
 </ul></li>
-<li>Blogdown / Hugo
+<li>Blog centric
 <ul>
 <li><a href="https://alison.rbind.io/" class="uri">https://alison.rbind.io/</a></li>
 <li><a href="http://www.citizen-statistician.org/" class="uri">http://www.citizen-statistician.org/</a></li>
@@ -293,7 +292,10 @@ div.tocify {
 <p>To full participate in today’s activites, you must have the following:</p>
 <ul>
 <li><strong>Version Control:</strong> A github account, git installed on your computer, the ability to push and pull from a local repository to a remote one, and the ability to connect git repositories to R through projects.</li>
-<li><strong>R &amp; R Studio:</strong> with the following packages: <code>knitr</code>, <code>blogdown v1.3</code>, <code>distill v1.2.4</code>, <code>devtools</code></li>
+<li><strong>R &amp; R Studio:</strong> with the following packages: <code>knitr</code>, <code>blogdown v1.3</code>, <code>distill v1.2.4</code>,
+<ul>
+<li>use blogdown to install Hugo by typing <code>blogdown::install_hugo()</code></li>
+</ul></li>
 <li><strong>A <a href="https://www.netlify.com/">Netlify</a> account.</strong> I recommend that you sign up with your github account.<br />
 </li>
 <li><strong>Set Intentions</strong> It’s easy to get lost in all the settings, tweaks, themes, customizations and so forth. Decide on some clear objectives to help keep you on track.</li>
@@ -306,6 +308,11 @@ div.tocify {
 <li>Share &amp; discuss your goals</li>
 </ol>
 </div>
+<p><br></p>
+<div class="blue">
+<p><strong>First watch, then do</strong></p>
+<p>We will be alternating a lot today where you watch me demo first, then you replicate on your own or in groups.</p>
+</div>
 <hr />
 </div>
 </div>
@@ -314,10 +321,6 @@ div.tocify {
 <p>R Markdown websites like this one can be built with a minimum of two files: a <code>_site.yml</code> and an <code>index.Rmd</code>.</p>
 <p>The <code>_site.yml</code> file controls the overall structure of the website, such as the order of the navigation bar and the color theme.</p>
 <p>When these files are <em>rendered</em> into HTML files, they can be hosted on GitHub for free. Then after turning on a few settings in your GitHub repository (repo) these files can be viewed as a magnificent webpage.</p>
-<div class="blue-nos">
-<p><strong>Watch first, do second</strong></p>
-<p>We will be alternating a lot today where you watch me demo first, then you replicate on your own or in groups.</p>
-</div>
 <div id="create-a-public-github-repo." class="section level3">
 <h3>1. Create a public Github repo.</h3>
 <p>We are going to employ the “<a href="https://happygitwithr.com/new-github-first.html">GitHub first, R Studio second</a>” approach.</p>
@@ -437,7 +440,7 @@ navbar:
 <li>Click <em>Settings</em> in the top right of the navigation bar in your repository.
 <ul>
 <li>Scroll down to the <strong>Pages</strong> section in the left navigation pane.</li>
-<li>Under <em>Source</em>, select <em>main</em>. (<em>Note: <a href="https://bookdown.org/yihui/blogdown/github-pages.html">Chapter 3.3 of the bookdown manual</a> has instructions for publishing something other than the top level folder for a repo, such as a <code>public</code> folder</em>)</li>
+<li>Under <em>Source</em>, select <em>main</em></li>
 </ul></li>
 </ul>
 <p>After the page refreshes, you will see the URL to your website in at the top of GitHub pages section.</p>
@@ -473,15 +476,137 @@ navbar:
 <div class="green">
 <p>👥 Do steps 7-8 in your breakout rooms. Come back to the main room when you are done.</p>
 </div>
+</div>
+<div id="additional-features-references" class="section level3">
+<h3>Additional Features &amp; References</h3>
+<ul>
+<li>Drill down navigation bar - indent in the YAML header under <code>menu</code></li>
+<li>Right alignment of some text</li>
+</ul>
+<pre class="md"><code>---
+name: &quot;my-website&quot;
+output_dir: &quot;.&quot;
+navbar:
+  title: &quot;My Website&quot;
+  left:
+    - text: &quot;Home&quot;
+      href: index.html
+    - text: &quot;Courses&quot;
+      menu:
+      - text: &quot;Math 1&quot;
+        href:  math1.html
+      - text: &quot;Math 2&quot;
+        href: math2.html
+  right: 
+    - text: &quot;About&quot;
+      href: about.html
+---</code></pre>
+<ul>
+<li>R Markdown sites from R Studio <a href="https://rmarkdown.rstudio.com/lesson-13.html" class="uri">https://rmarkdown.rstudio.com/lesson-13.html</a></li>
+<li>Chapter 10.5 in the Blogdown book <a href="https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html" class="uri">https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html</a></li>
+</ul>
 <hr />
 </div>
 </div>
 <div id="level-up-blog-aware-with-distill" class="section level1">
 <h1>Level up: Blog Aware with Distill</h1>
+<p>Distill based websites are a nice enhancement to the Rmarkdown website. Very similar setup/structure, but with added ability to manage a blog. You can actually create static Websites with distill as well. <a href="https://rstudio.github.io/distill/blog.html#website-or-blog">Learn more about the difference here</a>.</p>
+<div id="create-a-new-github-repo-and-connect-it-to-an-r-project." class="section level3">
+<h3>1. Create a new Github Repo and connect it to an R Project.</h3>
+<p>Follow steps 1 &amp; 2 from the section above.</p>
+</div>
+<div id="use-distill-to-turn-the-project-into-a-website." class="section level3">
+<h3>2. Use <code>distill</code> to turn the project into a website.</h3>
+<p>In the console, type the following:</p>
+<pre class="r"><code>library(distill)
+create_blog(dir=&quot;.&quot;, title = &quot;My Blog&quot;)</code></pre>
+<p>The basic scaffolding for a blog and an initial welcome post will be created within the root (<code>.</code>) sub-directory.</p>
+<ul>
+<li>Shut down RStudio and re-open the project to enable the <em>build</em> tab. This is similar to step 6 above.</li>
+</ul>
+</div>
+<div id="configure-the-yaml-header-and-build-your-site." class="section level3">
+<h3>3. Configure the YAML header and build your site.</h3>
+<p>Open <code>_site.yml</code> Looks similar eh?</p>
+<ul>
+<li>output: <code>distill::distill_article</code> instead of <code>html_document</code></li>
+<li>Change the description and name.</li>
+<li>Change the <code>output_dir:</code> in the YAML to <code>&quot;docs&quot;</code></li>
+<li>Build your website by using the <em>build</em> tab and see if you can spot where these items show up.
+<ul>
+<li>You can also run <code>render_site()</code> in the console to build your site instead of using the <em>build</em> tab.</li>
+</ul></li>
+</ul>
+<div id="changing-the-output-directory" class="section level4 red">
+<h4>Changing the output directory</h4>
+<ul>
+<li>For this example we will be publishing through github pages, which doesn’t seem to recognize <code>_site</code>, but does <code>docs</code>.<br />
+</li>
+<li>This seems to be a github thing. Not a universal thing</li>
+</ul>
+</div>
+<p>What’s happening, is that all <code>.md</code> and <code>.Rmd</code> files in your root directory get knitted into <code>.html</code> files and placed into the <code>docs</code> folder. All content in the <code>_posts</code> folder also gets <strong>directly copied</strong> into the <code>docs</code> folder.</p>
+</div>
+<div id="create-a-post" class="section level3">
+<h3>4. Create a post</h3>
+<p>Run the following code in the console:</p>
+<pre class="r"><code>create_post(&quot;Hello World&quot;, draft=TRUE)</code></pre>
+<ul>
+<li>Posts are created in the <code>_posts</code> subdirectory.</li>
+<li>An entire subdirectory is created that reflects the creation date and name of post: <code>2021-06-15-hello-world</code></li>
+<li>You can work on these posts individually, knitting as needed.
+<ul>
+<li>Files in a sub-directory do not get re-rendered when you build your site.</li>
+<li><em>See <a href="https://rstudio.github.io/distill/blog.html#renaming-posts">this section</a> of the distill documentation for how to rename posts and directories</em></li>
+</ul></li>
+<li>When you are ready to make your post live, either fully remove or update the <code>draft: true</code> section in the YAML header</li>
+</ul>
+<div class="green">
+<p>👥 In breakout rooms:</p>
+<ol style="list-style-type: decimal">
+<li>Create new static page</li>
+<li>Add the new static page to the navigation bar</li>
+<li>Create a new post and write a few sentences about what you want to use this site for.</li>
+<li>Build your site and make sure you see all changes.</li>
+</ol>
+<p>Come back to the main room when you are done.</p>
+</div>
+</div>
+<div id="publishing-your-website" class="section level3">
+<h3>5. Publishing your website</h3>
+<ul>
+<li>Add a <code>.nojekyll</code> file using either <code>touch .nojekyll</code> in the terminal, or <code>file.create(&quot;.nojekyll&quot;)</code> in the R console
+<ul>
+<li>Github pages tends to want to use the Jekyll website generator to compile pieces of a website into one cohesive site. You don’t need that in this case.</li>
+</ul></li>
+<li>Add, commit, and push your changes to your github repository.</li>
+<li>Activate github pages, and publish from the from the <code>main</code> branch and the <code>/docs</code> folder.</li>
+</ul>
+<div id="random-share-out" class="section level4 green">
+<h4>👥 RANDOM SHARE OUT:</h4>
+<ul>
+<li>You will be randomly assigned a new breakout room.<br />
+</li>
+<li>Each person take 1 minute, share their screen and show others what their page looks like.</li>
+</ul>
+</div>
+</div>
+<div id="additional-references" class="section level3">
+<h3>Additional References</h3>
+<p>This was a basic introduction to these types of websites. See the documentation at <a href="https://rstudio.github.io/distill/blog.html" class="uri">https://rstudio.github.io/distill/blog.html</a> to see how to:</p>
+<ul>
+<li>create custom listings for subsets of posts</li>
+<li>add categories to posts so they can be searched through</li>
+<li>allow Disqus commenting and sharing of posts on social media</li>
+<li>Themes</li>
+<li>Publishing on sites other than github like Netlify</li>
+<li>and more</li>
+</ul>
 <hr />
 </div>
-<div id="full-fancieness-hugo" class="section level1">
-<h1>Full Fancieness: Hugo</h1>
+</div>
+<div id="full-fancieness-hugo-️-section-in-development" class="section level1">
+<h1>Full Fancieness: Hugo ⚠️ Section in development</h1>
 <p>The “simple” website that was built above can be extended and enhanced well enough with some CSS and Rmarkdown wizardry. However, sometimes you may want a little more of a ‘modern’, ‘dynamic’ or ‘responsive’ feel, or to include a blog in your website. Here are some examples:</p>
 <ul>
 <li><a href="https://georgecushen.com/" class="uri">https://georgecushen.com/</a></li>
@@ -490,9 +615,9 @@ navbar:
 <p>Hugo is it’s own language, and for advanced usage of Hugo-based websites, some understanding of how Hugo works and reading <em>those</em> docs may be required.</p>
 <p>For now, we are just going to show you how to get started in this realm of fancy-ness using the R package <code>blogdown</code>. Then you can go break it later. The super official blogdown documentation is linked in the References section at the bottom of this page.</p>
 <p>If you did not do so beforehand, install the <code>blogdown</code> package, and use it to install Hugo using <code>blogdown::install_hugo()</code>.</p>
-<div id="create-a-new-github-repo-and-connect-it-to-an-r-project." class="section level3">
+<div id="create-a-new-github-repo-and-connect-it-to-an-r-project.-1" class="section level3">
 <h3>1. Create a new Github Repo and connect it to an R Project.</h3>
-<p>This is step 1 and 2 from the first part of this workshop.</p>
+<p>You got this.</p>
 </div>
 <div id="create-a-new-site-with-a-specified-theme" class="section level3">
 <h3>2. Create a new site with a specified theme</h3>
@@ -598,31 +723,10 @@ navbar:
 <li>Hugo has a TON of themes: <a href="https://themes.gohugo.io/" class="uri">https://themes.gohugo.io/</a> . Not all work with <code>blogdown</code>, and not all are easy to work with. Here is a blog post by Peter Baumgartner on <a href="https://portfolio.peter-baumgartner.net/2018/07/19/blogdown-using-themes/">important thoughts on choosing a theme to work with</a>.</li>
 <li>The theme shown here has a very simple TOML configuration file. Each theme is different and unique. Reading the documentation (generally contained in the readme) is critical.</li>
 </ul>
-<hr />
 </div>
-</div>
-<div id="additional-references" class="section level1">
-<h1>Additional References</h1>
-<div id="github" class="section level3">
-<h3>Github</h3>
+<div id="additional-references-1" class="section level3">
+<h3>Additional References</h3>
 <ul>
-<li><a href="https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud" class="uri">https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud</a></li>
-<li><a href="https://swcarpentry.github.io/git-novice/" class="uri">https://swcarpentry.github.io/git-novice/</a></li>
-<li><a href="https://happygitwithr.com/" class="uri">https://happygitwithr.com/</a></li>
-</ul>
-</div>
-<div id="static-sites" class="section level3">
-<h3>Static Sites</h3>
-<ul>
-<li>R Markdown sites from R Studio <a href="https://rmarkdown.rstudio.com/lesson-13.html" class="uri">https://rmarkdown.rstudio.com/lesson-13.html</a></li>
-<li>Chapter 10.5 in the Blogdown book <a href="https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html" class="uri">https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html</a></li>
-<li>Distill website <a href="https://rstudio.github.io/distill/website.html" class="uri">https://rstudio.github.io/distill/website.html</a></li>
-</ul>
-</div>
-<div id="blog-based-websites" class="section level3">
-<h3>Blog based websites</h3>
-<ul>
-<li><code>distill</code> for Rmarkdown <a href="https://rstudio.github.io/distill/blog.html" class="uri">https://rstudio.github.io/distill/blog.html</a></li>
 <li><code>blogdown</code>: Creating Websites with R Markdown <a href="https://bookdown.org/yihui/blogdown/" class="uri">https://bookdown.org/yihui/blogdown/</a> , <a href="https://github.com/rstudio/blogdown" class="uri">https://github.com/rstudio/blogdown</a>
 <ul>
 <li>Getting started with the Academic theme: <a href="https://sourcethemes.com/academic/docs/get-started/" class="uri">https://sourcethemes.com/academic/docs/get-started/</a></li>

@@ -6,12 +6,8 @@
   border-radius: 10px;
 }
 
-.green {
-  padding: 1em;
-  background: #b3e6cc;
-}
-
 .blue {
+  border-radius: 10px;
   padding: 1em;
   background: #cce6ff;
 }
@@ -21,11 +17,18 @@
   background: #cce6ff;
 }
 
+.green {
+  padding: .7em;
+  border-radius: 10px;
+  background: #b3e6cc;
+}
 
 .red {
+  padding: .7em;
+  border-radius: 10px;
   background: #ff9999;
 }
 
 hr {
-  border-top: 2px solid navy;
+  border-top: 3px solid navy;
 }
