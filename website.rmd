@@ -3,7 +3,7 @@ title: "Day 4: Building Websites"
 output:
   html_document: 
     toc: yes
-    toc_float: yes
+    toc_float: no
     theme: flatly
     css: style.css
 ---
@@ -69,6 +69,10 @@ To full participate in today's activites, you must have the following:
 
 We will be alternating a lot today where you watch me demo first, then you replicate on your own or in groups.
 :::
+
+**How you will actually learn this material:**
+![](https://carpentries-incubator.github.io/open-science-with-r/img/practical_dev_both.png)
+
 
 ----
 
@@ -524,25 +528,86 @@ Now you are GTG! At least at a starting page. The devil is always in the details
 
 ----
 
-# Fancieness Level 5000: Hello Academic Theme. `r emo::ji("warning")` Section in development
+# Fancieness Level 5000: Hello Academic Theme. 
 
-We do **not** have time to go through this in detail. PLEASE follow up with [Alison Hill's Up and running with blogdown in 2021](https://alison.rbind.io/blog/2020-12-new-year-new-blogdown/) post before you start serious webpage building. She'll set you up with all the proper checks. We're just fiddling around. 
+We do **not** have time to go through this in detail. PLEASE follow up with [Alison Hill's Up and running with blogdown in 2021](https://alison.rbind.io/blog/2020-12-new-year-new-blogdown/) post before you start serious webpage building. She'll set you up with all the proper checks. We're just fiddling around here and getting you introduced. 
 
 
 ### 1. Create a new Github Repo and connect it to an R Project 
 ### 2. Create a new site with the Academic theme
 
 ```{r, eval=FALSE}
-new_site(theme = "wowchemy/starter-academic")
+blogdown::new_site(theme = "wowchemy/starter-academic")
 ```
 * This time let blogdown start the server for us. 
-* Expand your site out of the viewer pane and into a browswer window. 
+* Expand your site out of the viewer pane and into a browser window. 
+* Scroll down and be overwhelmed by ALL the parts. 
+
+### 3. Simplify!
+
+* Each one of those horizontal panes is controlled with a `widget`. 
+* Massive cognitive overload to have all of them on.
+* Start your configuration in the `content/home` folder. 
+    - each one of these `.md` files are a widget. 
+
+:::{.green}
+`r emo::ji("pencil2")` **Control your widgets**
+
+* Open `hero.md`
+* Add `active: false` to line 3 (under widget: name)
+    - This will add the parameter _active_, and set it to _false_. I didn't make up that name, I found the solution [here](https://github.com/wowchemy/wowchemy-hugo-modules/discussions/2229). 
+* Save this file, and look back at the page in the browser. Which section was deleted? 
+* Turn off `demo.md` the same way. This one already had a spot for the active parameter. 
+:::
+
+### 4. Personalize
+* People are controlled under `content/authors`. You specifically are in `/admin/_index.md`, and AFAIK you are not Nelson Bighetti. 
+
+
+:::{.green}
+`r emo::ji("pencil2")` **Make it about you**
+Change each of these one at a time, watching the live reload to make sure you know what they are linked to. 
+
+* bio
+* interests
+* title
+* organization
+* role
+* paragraph at the bottom
+
+:::
+
+
+### 5. General layout for projects, publications, events
+* Each has a folder under `/content` with an `_index.md` file
+    - This index file controls the look of the widget, how many items to show, if there is an image or caption etc. 
+* Each item (individual project, course) has their own folder
+* Each item is controlled by an `index.md`
+    - So to add new projects, publications etc, add a new folder, copy an `index.md` from another project, and modify. 
+    - Cover images are always named `featured`
+    - The specific configuration for a project is different from a publication, is different from an event. So if you're making new events, make sure you copy the files from another event. 
+
+### 6. New blog posts
+* Use the new post addin in R Studio
+    - This creates a new folder similar to what was seen before, with the folder name containing the date and slug. 
+* Note it gives you the option to put this post in other subdirectories. Stick with `posts` until you're more familiar with blogdown. 
+    - The post template that is created isn't driven by the folder. 
+    I.e. if you create a new post and select the "project" folder, it will still give you a post template for a new blog post, not a project. 
+
+
+### Random other tidbits
+* Some widgets are useful, just not on the home page. Widgets can be transplanted to other pages. 
+* Check the `content/home/widget.md` for customization options 
+* navbar items are controlled in `config/_default/menus.yaml`
+* [updating your theme can be painful...](https://community.rstudio.com/t/updating-academic-theme-woes/68224)
 
 
 ### Additional References
+In recommended order
 
-* `blogdown`: Creating Websites with R Markdown https://bookdown.org/yihui/blogdown/ , https://github.com/rstudio/blogdown 
+* `r emo::ji("exclamation")` Up and running with blogdown in 2021 https://alison.rbind.io/blog/2020-12-new-year-new-blogdown/ 
+* Literally all of her other Blogdown material
 * Getting started with the Academic theme: https://wowchemy.com/docs/getting-started/get-started/
-* Up and running with blogdown in 2021 (Literally anything from Alison Hill) https://alison.rbind.io/blog/2020-12-new-year-new-blogdown/ 
+* `blogdown`: Creating Websites with R Markdown https://bookdown.org/yihui/blogdown/ , https://github.com/rstudio/blogdown 
 
     
